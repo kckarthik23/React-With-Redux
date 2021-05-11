@@ -1,25 +1,18 @@
-.widget{
-background: $widget_color;
-border: none;
+.widget {
+  background: $widget_color;
+  border: none;
 }
 
-.widget__header{
-    background: $widget_h_color;
-    color:$header_color;
-    display: flex;
-    justify-content: space-between;
-
+.widget__header {
+  background: $widget_h_color;
+  color: $header_color;
+  display: flex;
+  justify-content: space-between;
 }
 
-
-.widget__message{
-
-    border-bottom: 0.1rem solid lighten($color:rgb(228, 198, 197), $amount: 10);
-    color:$header_color;
-    padding: $s-size;
-    text-align: center;
-
-
-
-
+.widget__message {
+  border-bottom: 0.1rem solid lighten($color: rgb(228, 198, 197), $amount: 10);
+  color: $header_color;
+  padding: $s-size;
+  text-align: center;
 }

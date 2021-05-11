@@ -2,7 +2,7 @@ import React from "react";
 
 const Note = (props) => (
   <div className="note">
-  {props.notes && <p>{props.count} . {props.notes}</p>}
+  {props.notes && <p className="notes">{props.count} . {props.notes}</p>}
       {props.notes && (
         <button
           className="button--link"

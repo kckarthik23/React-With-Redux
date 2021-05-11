@@ -1,53 +1,42 @@
 .ReactModalPortal > div {
-    opacity: 0;
+  opacity: 0;
 }
 
 .ReactModalPortal .ReactModal__Overlay {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    
-transition: opacity 200ms ease-in-out;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 
+  transition: opacity 200ms ease-in-out;
 }
 
-.ReactModalPortal .ReactModal__Overlay--after-open{
-
-opacity: 1;
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
 }
 
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
 
-.ReactModalPortal .ReactModal__Overlay--before-close{
-    opacity: 0;
-    }
-   
+.modal {
+  background: $widget_h_color;
+  color: $header_color;
+  max-width: 40rem;
+  padding: $m-size;
+  text-align: center;
+}
 
-    .modal{
-background: $widget_h_color;
-color: $header_color;
-max-width: 40rem;
-padding: $m-size;
-text-align: center;
+.modal__note {
+  color: $header_color;
+  font-weight: 500;
+  padding: $s-size;
+  text-align: center;
+  word-wrap: break-word;
+}
 
-    }
-
-    
-    .modal__note{
-        
-        color: $header_color;
-       font-weight: 500;
-       padding: $s-size;
-        text-align: center;
-        
-            }
-
-            
-    .modal__message{
-        
-        color: $header_color;
-        font-weight: 500;
-        font-style: oblique;
-    
-        text-align: center;
-        
-            }
+.modal__message {
+  color: $header_color;
+  font-weight: 500;
+  font-style: oblique;
+  text-align: center;
+}
