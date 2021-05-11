@@ -3,11 +3,15 @@ import Note from "./Note";
 
 const Notes = (props) => (
   <div>
-    <button disabled={!props.notes.length > 0} onClick={props.handleRemoveAll}>
+  <div className="widget__header">
+  <h3>Here your Notes</h3>
+    <button className="button--link" disabled={!props.notes.length > 0} onClick={props.handleRemoveAll}>
       Remove All
     </button>
-    {props.notes.map((note) => (
-      <Note notes={note} key={note} handleRemove={props.handleRemove} />
+    </div>
+    {!props.notes.length>0 && <p className="widget__message">Enter your notes to get Started!!</p>}
+    {props.notes.map((note,index) => (
+      <Note notes={note} key={note} count={index+1} handleRemove={props.handleRemove} />
     ))}
   </div>
 );

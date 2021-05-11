@@ -5,6 +5,7 @@ import Notes from "./Notes";
 import AddNotes from "./AddNotes";
 import ReactModal from "./ReactModal";
 
+
 export default class NotesApp extends React.Component {
   title = "Notes App";
   subtitle = "Notes are important";
@@ -64,13 +65,17 @@ export default class NotesApp extends React.Component {
     return (
       <div>
         <Header />
+        <div className="container">
         <Action notes={this.state.notes} handlePick={this.handlePick} />
+        <div className="widget">
         <Notes
           notes={this.state.notes}
           handleRemoveAll={this.handleRemoveAll}
           handleRemove={this.handleRemove}
         />
         <AddNotes handleAddNote={this.handleAddNote} />
+        </div>
+        </div>
         <ReactModal
           selectedNote={this.state.selectedNote}
           handleModal={this.handleModal}

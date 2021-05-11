@@ -1,0 +1,18 @@
+
+.header{
+background:$header_b_color;
+font-size: $l-size;
+padding-top:$s-size ;
+
+}
+.header__title{
+color: $header_color;
+font-size: $l-size;
+margin: 0;
+}
+.header__subtitle{
+color:$header_s_color;
+font-size: $m-size;
+margin: 0;
+padding-bottom: $s-size;
+}
