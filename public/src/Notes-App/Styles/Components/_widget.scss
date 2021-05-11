@@ -8,6 +8,7 @@
   color: $header_color;
   display: flex;
   justify-content: space-between;
+  padding: $s-size;
 }
 
 .widget__message {
